@@ -198,10 +198,24 @@ while (crewMass < 60) {
 
   Una volta fatto, modifica la massa di qualche elemento dell'equipaggio e vedi se riesci ad ottenere un messaggio diverso.
 */
-
+const massatotale = 473
+if (massatotale < 500) {
+  console.log('Ship is under loaded')
+} else if (massatotale < 700) {
+  console.log('Ship is half loaded')
+} else if (massatotale < 900) {
+  console.log('Warning: Load is over 700')
+} else if (massatotale < 1000) {
+  console.log('Critical Load: Over 900')
+} else {
+  console.log('DANGER! OVERLOAD ALERT: escape from ship now!')
+}
 /* ESERCIZIO 8
   Usa un for loop per cambiare il valore della proprietà "gender" di alcuni personaggi dal valore "n/a" a "robot" (Tip: puoi effettuare la riassegnazione del valore corrispondente o creare un nuovo array)
 */
+for (let i = 0; i < starWarsCharacters.gender; i++) {
+  console.log('robot')
+}
 
 /* --EXTRA-- ESERCIZIO 9
   Utilizzando gli elementi presenti nell'array "femaleCharacters" rimuovi dall'array "charactersNames" le stringhe corrispondenti a personaggi con lo stesso nome.
